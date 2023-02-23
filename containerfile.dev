@@ -1,0 +1,8 @@
+# Base image
+FROM node:18
+
+# Create app directory
+WORKDIR /app
+
+# Starts the server on dev mode
+ENTRYPOINT yarn start:dev

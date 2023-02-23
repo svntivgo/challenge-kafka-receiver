@@ -1,0 +1,13 @@
+version: '1.0'
+
+services:
+  app:
+    image: challenge-kafka-receiver:development
+    container_name: challenge-kafka-receiver
+    build:
+      context: .
+      dockerfile: containerfile.dev
+    ports:
+      - 3001:3001
+    volumes:
+      - .:/app
